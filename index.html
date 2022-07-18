@@ -1,0 +1,69 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="px-4 py-4  bg-gray-200 ">
+    <nav class=" px-2 py-2 flex justify-center">
+       
+             <h1 class="text-xl font-bold"> javascript crude operation</h1>
+
+    </nav>
+    <table class="">
+                   <!-- <div  class=" justify-center flex mt-4"> -->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" >
+                    <!-- <div class=" justify-center flex space-x-4 "> -->
+                    <div class=" justify-center flex space-x-4 ">
+                        <label class="validation-error hide" id="fullNameValidationError">Full Name* :</label>
+                        <input type="text" name="fullName" id="fullName" class="border-2  border-black">
+                    </div>
+                    <div class="mt-2 justify-center flex space-x-2">
+                        <label>Email :</label>
+                        <input type="text" name="Email" id="Email" class="border-2  border-black">
+                    </div>
+                    <div class="mt-2 justify-center flex space-x-2">
+                        <label>Contact :</label>
+                        <input type="text" name="Contact" id="Contact"   class="border-2  border-black">
+                    </div>
+                    <div class="mt-2 justify-center flex space-x-2">
+                        <label>City :</label>
+                        <input type="text" name="city" id="city" class="border-2  border-black">
+                    </div>
+                    <div  class="justify-center flex">
+                        <input type="submit" value="Submit" class="form-action-buttons justify-center flex space-x-4 mt-4 px-2 font-semibold py-2 bg-gray-300 rounded-full">
+                    </div>
+                    <!-- </div> -->
+                </form>
+                   <!-- </div> -->
+            </table>
+
+
+
+            
+
+
+
+
+
+            <div class=" flex mx-auto mt-8 justify-center  space-x-2">
+                <table class=" list table-auto top-2  mb-8  border-8 border-black border-separate border-spacing-2 border border-slate-400" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th class="border border-slate-300">Full Name</th>
+                            <th  class="border border-slate-300">Email</th>
+                            <th class="border border-slate-300">Password</th>
+                            <th class="border border-slate-300">Contact </th>
+                            <th class="border border-slate-300">City</th>
+                        </tr>
+                    </thead>
+                    <tbody class="border border-slate-300">
+                    </tbody>
+                </table>
+            </div>
+    <script src="script.js"></script>
+</body>
+</html>
